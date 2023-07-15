@@ -1,0 +1,71 @@
+h1 {
+  border: #32a1ce;
+  background-color: #d11010;
+  background-position: 30%;
+  font-family: cursive;
+  text-align: center;
+}
+
+h2 {
+  font-family: cursive;
+  color: black;
+}
+
+body {
+  background-color: #32a1ce;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #ce3232;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #218bbd;
+}
+
+button:active {
+  background-color: #0c6ebd;
+}
+
+#resultsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  background-color: #32a1ce;
+}
+
+/* :hover selector */
+.pokemon-container:hover {
+  transform: skew(3deg, 2deg);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: thick double;
+  width: 150px;
+}
+
+
+@media (max-width: 768px) {
+
+  .pokemon-container {
+    border: 2px solid red;
+  }
+}
+
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* JavaScript API response effect */
+.api-response {
+  background-color: rgb(246, 246, 239);
+  border-color: brown;
+}
